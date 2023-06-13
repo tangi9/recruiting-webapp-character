@@ -3,9 +3,11 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: hsl(220deg 13% 13%);
+  color: white;
 }
 
-.App-logo {
+.App-logo{
   height: 40vmin;
   pointer-events: none;
 }
@@ -28,8 +30,86 @@
 
 .App-section {
   flex: 1 1 0;
-  background-color: hsl(220deg 13% 13%);
-  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+.Character-menu {
+  justify-content: space-evenly;
+  padding: 1%;
+}
+
+.Character-menu > * {
+  padding: 1%;
+  border-radius: 25px;
+  margin: 1%;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.Characters-list {
+  display: inline-flexbox;
+  flex-direction: column;
+}
+
+.CharacterBuilder, .SkillCheck {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5% 2%;
+}
+
+.SkillCheck {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  margin: 5% 2%
+}
+
+.CharacterBuilder, .SkillCheck {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-content: center;
+  margin: 2%
+}
+
+div[id^='PlayerCharacter'], .Attribute-section, .Class-section, .Skill-section, .SkillCheck-section {
+  padding: 2%;
+  outline-color: white;
+  outline-style: ridge;
+  border-radius: 25px;
+
+}
+
+.Attribute, .Skills {
+  padding: 5px 0;
+  display: inline-flexbox;
+  flex-direction: column;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.CharacterClass {
+  display: inline-flexbox;
+  flex-direction: column;
+  text-align: center;
+  outline: none;
+  background: transparent;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-size: medium;
+  vertical-align: middle;
+}
+
+.Attribute > *, .CharacterClass > *, .Skills > *, .SkillCheck > * {
+  margin: 0 0 0 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .App-link {
